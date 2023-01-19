@@ -1,0 +1,78 @@
+header{
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+   
+}
+
+.header{
+
+    &_logo {
+      display: flex;
+      align-items: center;
+      color: #ff9f00;
+      margin: 0 25px;
+    }
+    &_logoName{
+      font-size: large;
+      font-weight: bold;
+      color: white;
+    }
+    &_search {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      border-radius: 24px;
+      margin: 0 10px;
+      input{
+        width: 100%;
+        padding: 10px;
+        border: 0;
+      }
+    }
+    &_searchIcon{
+      background-color: #ff9f00;
+      padding: 8px;
+      color: black;
+    }
+    &_nav{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 25px;
+      &_itemBasket{
+        display: flex;
+        align-items: center;
+        text-decoration: #ff9f00;
+        a{
+          color: white;
+          text-decoration: none;
+      
+        }
+      }
+      &_lineOne{
+        font-size: 10px;
+        font-weight: normal;
+      }
+      &_lineTwo{
+        font-size: 14px;
+        
+      }
+      a{
+        color:white;
+        text-decoration: none;
+
+      }
+      &_user{
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-right: 20px;
+        flex-direction: column;
+      }
+    }
+}
