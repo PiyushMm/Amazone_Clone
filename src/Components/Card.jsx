@@ -30,7 +30,7 @@ export default function Card(props) {
         <img src={imageURL} alt='cardItem' />
         <br />
         <br />
-        <button onClick={()=>clickHandler(props)}>Add to Cart</button>
+        <button  id  = "card_button" onClick={()=>clickHandler(props)}>Add to Cart</button>
       </div>
 
     </div>

@@ -1,10 +1,13 @@
 
 import { useStateValue } from './StateProvider';
+import { Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
 
 export default function CheckoutAd() {
   const {myreducer} = useStateValue();
   const [state,] = myreducer;
-const gettotalamount =  () =>{
+ const gettotalamount =  () =>{
   let total = 0;
 
   state.cartList.map((item)=>{
@@ -16,16 +19,19 @@ const gettotalamount =  () =>{
 
   return (
     <div className='checkoutAd'>
-        <div className='leftSide'>
+        <div className='checkout_leftSide'>
             <img src={'./Images/AdImage.png'} alt='checkout_image'/>
         </div>
-        <div className='rightSide'>
-           <div className = 'subtotal'>
+        <div className='checkout_rightSide'>
+           <div className = 'checkout_subtotal'>
             <p>Subtotal ({state.cartList.length} items) : <strong>&#8377;{gettotalamount()}</strong> </p>
             <p><input type={'checkbox'}/>This order contains a gift</p>
-            <button>proceed to Checkout</button>
+            <Link to={'Pyment'}> <button  id = "checkoutAd_button" >  proceed to Checkout</button></Link>
+            <Outlet/>
            </div>
+
         </div>
+        
     </div>
   )
 }

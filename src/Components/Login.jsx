@@ -45,14 +45,14 @@ const Register = (e) =>{
 }
     return (
         <div className='login'>
-            <form className='container'>
+            <form className='login_container'>
                 <h1>Sign in</h1>
                 <label>Email <br />
-                    <input type={'email'} value = {email}  onChange = {(e)=>{setEmail(e.target.value)}}/>
+                    <input  className="login_input" type={'email'} value = {email}  onChange = {(e)=>{setEmail(e.target.value)}}/>
                 </label>
                 <br />
                 <label>Password <br />
-                    <input type={'password'} value = {password}  onChange= {(e) =>{setPassword(e.target.value)}}/>
+                    <input  className="login_input" type={'password'} value = {password}  onChange= {(e) =>{setPassword(e.target.value)}}/>
                 </label>
                 <br />
                 <button onClick={SignIn}>Login</button>

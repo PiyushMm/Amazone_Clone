@@ -4,6 +4,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 
+
 export default function Header() {
     const {myreducer} = useStateValue();
     const [state]= myreducer;
@@ -11,9 +12,10 @@ export default function Header() {
     
     return (
         <div>
+            
             <header>
                 <div className='header_logo'>
-                <AddBusinessIcon fontSize='large'/>&nbsp; 
+                <AddBusinessIcon fontSize='large' />&nbsp; 
                 <Link to={'/'}>
                
                 <span className='header_logoName'>Amazon</span>

@@ -22,6 +22,7 @@ header{
       font-size: large;
       font-weight: bold;
       color: white;
+      
     }
     &_search {
       display: flex;
@@ -75,4 +76,42 @@ header{
         flex-direction: column;
       }
     }
+    
+}
+@media screen  and  (max-width:500px){
+
+  header {
+    // height:80%;
+    // width:100%;
+    // text-align: center;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+  }
+  .header{
+    width:100%;
+    &_logo{
+      height: 10vh;
+      width: 100px;
+      margin: 2px;
+    }
+   
+    input{
+      width: 100%;
+      margin:1px;
+
+      
+    }
+   
+    
+   &_logoName {
+      margin : 0;
+      font-size: 10px;
+    }
+  }
+ 
+  
 }

@@ -9,3 +9,19 @@
       top: 0;
     }
   }
+
+  @media screen  and  (max-width:500px){
+
+    .banner {
+     
+      // align-items: center;
+      // align-content: center;
+      // text-align: center;
+      height: 190px;
+
+
+    img{
+      // height: 100vh;
+    }
+    }
+}

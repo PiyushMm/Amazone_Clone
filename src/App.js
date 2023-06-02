@@ -12,28 +12,34 @@ import ShoppingBasket from './Components/ShoppingBasket';
 import CheckoutAd from './Components/CheckoutAd';
 import React from 'react';
 import './Login.scss';
-
+import Pyment from './Components/Pyment';
+import './payment.scss';
+import OrderPlaced from './Components/OrderPlaced';
 
 
 
 function App() {
-  return (
+  return ( 
     <BrowserRouter>
       <Header />
+     
+      
       <Routes>
         <Route exact path='/' element={<React.Fragment>
           <Banner />
           <ProductList />
         </React.Fragment>} />
         <Route exact path='/checkout' element={<React.Fragment>
-          <CheckoutAd />
-          <ShoppingBasket />
+          <CheckoutAd></CheckoutAd>    
+          <ShoppingBasket />       
         </React.Fragment>
-        } />
+        } >
+         
+        </Route>
         <Route exact path='/login' element = {
         <Login/>}/>
-
-     
+       <Route  path='/checkout/Pyment' element = {<Pyment/>}></Route>
+       <Route  path='/checkout/Pyment/OrderPlaced' element = {<OrderPlaced/>}></Route>
 
       </Routes>
 

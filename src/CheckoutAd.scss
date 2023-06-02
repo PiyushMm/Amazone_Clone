@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: row;
     padding: 20px;
+    // justify-content: space-around;
 
-    .leftSide{
+    .checkout_leftSide{
         img{
          margin: 0 10px;
-        width: 900px;
+        width: 750px;
         height: 142px;
+        
         }
 
 
     }
-    .subtotal{
+    .checkout_subtotal{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -25,7 +27,7 @@
       p{
         margin-top: 0;
       }
-      button{
+      #checkoutAd_button{
         padding: 5px;
         background-color: #ff9f00;
         border: 1px solid;
@@ -35,5 +37,67 @@
     img{
       max-width: 100%;
       height: auto;
+    }
+  }
+  @media screen and(max-width:800px){
+
+    .checkoutAd{
+      width: 600px;
+      margin: 0;
+      padding: 0;
+      // background-color: red;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      // .checkout_subtotal{
+      //   width: 200px;
+      // }
+    }
+    
+  }
+
+  @media screen and(max-width:500px){
+    .checkoutAd{
+     margin-left: 0;
+     
+// background-color: green;
+// justify-content: space-around;
+
+
+     padding: 0;
+      width: 500px;
+    .checkout_leftSide{
+       width: 200px;
+       margin: 0;
+       padding: 0;
+       img{
+        margin: 0;
+        padding: 0;
+       }
+    }
+  
+  .checkout_subtotal{
+    
+    // padding: 0;
+    width: 150px;
+    
+    
+  }
+  p{
+    font-size: 15px;
+  
+  }
+  #checkoutAd_button{
+    font-size: 8px;
+  }
+  
+}
+  
+  }
+  @media screen and(max-width:400px){
+    .checkoutAd{
+      margin-left: 0;
+      width: 400px;
     }
   }
